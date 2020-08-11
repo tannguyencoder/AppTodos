@@ -1,0 +1,481 @@
+body {
+    background-color: white;
+    margin: 0 auto;
+    float: inline-end;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: #2799cc;
+}
+
+.header h2 {
+    font-size: 30px;
+    font-weight: 200px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0;
+    color: white;
+}
+
+.header p {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+/*
+* Main Content 
+*/
+.container {
+    margin-top: 2px;
+    height: 700px;
+    width: 100%;
+    background-color: #f4d431;
+}
+
+.col {
+    float: left;
+    margin-top: 5px;
+}
+
+/*
+* Menu
+*/
+.col.menu {
+    width: 15%;
+    height: 695px;
+    background-color: #f4d431;
+    padding-left: 20px;
+}
+.menu-header h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100px;
+    color: white;
+}
+
+.search{
+    text-align: center;
+    padding-left: 10px;
+}
+.search i{
+    font-size: 20px;
+    margin-right: 10px;
+    color: white ;
+}
+.search i:hover{
+    text-align: center;
+    font-size: 23px;
+    margin-right: 10px;
+}
+.search input{
+    border-radius: 20px;
+    border: 1px solid white;
+    padding: 7px 7px 7px 7px;
+}
+.search input:hover{
+    border: 1px solid #2799cc;
+}
+.vertical-menu {
+    margin-top: 20px;
+    text-align: center;
+    /* Set a width if you like */
+}
+
+.vertical-menu a {
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    font-size: 23px;
+    font-weight: 120;
+    background-color: #ddc645;
+    /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    font-size: 23px;
+    font-weight: 120;
+    background-color: #ddc645;
+}
+
+
+/*
+* Everyday
+*/
+.col.every {
+    padding-top: 30px;
+    width: 38%;
+    height: 665px;
+    background-color: #f4d431;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ev{
+    float: left;
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    border-radius: 25px;
+}
+.ev_header{
+    margin-top: -21px;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.ev_header h2{
+    font-size: 25px;
+    font-weight: 500px;
+    padding: 20px 10px 0px 30px;
+    color: #2799cc;
+}
+.ev_content{
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+}
+
+.ev_task_line{
+    margin-top: 20px;
+    float: left;
+    width: 96.5%;
+    height: 80px;
+    margin-left: 10px;  
+}
+
+.ev_task{
+    height: 50px;
+}
+.ev_task.task_confirm{
+    float: left;
+    width: 10%;
+}
+.ev_task.task_confirm input{
+    margin-top: 33px;
+    display: block;
+    transform: scale(1.5);
+    color: #f4d431;
+}   
+.ev_task.task_content{
+    float: left;
+    width: 68%;
+    font-size: 25px;
+    text-align: left;
+}
+.ev_task.task_edit{
+    margin-top: -5px;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    width: 10%;
+    color: #2799cc;
+}
+.ev_task.task_delete{
+    margin-top: -5px;
+    font-size: 30px;
+    text-align: center;
+    float: left; 
+    width: 10%;
+    color: #2799cc;
+}
+.ev_task_space {
+    float: left;
+    width: 100%;
+}
+.ev_task_space hr{
+    border: 2px dashed #f4d431;
+}
+.ev_footer{
+    width: 100%;
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.ev_footer h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 0px 0px 0px ;
+    margin: 2px 0px 0px 0px;
+}
+.ev_footer h2 a{
+    text-decoration: none;
+    color: #2799cc;
+}
+.re{
+    float: left;
+    height: 260px;
+    width: 100%;
+    background-color: #2799cc;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+.re_header{
+    margin-top: -21px;
+    width: 100%;
+    height: 70px;
+    background-color: #2799cc;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.re_header h2{
+    font-size: 25px;
+    font-weight: 500px;
+    padding: 20px 10px 0px 30px;
+    color: white;
+    text-align: center;
+}
+.re_container{
+    float: none;
+    width: 95%;
+    height: 180px;
+    background-color: white;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.re_content{
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: auto;
+}
+
+.re_task_line{
+    margin-top: 30px;
+    float: left;
+    width: 96.5%;
+    height: 100px;
+    margin-left: 10px;  
+}
+.re_task_line hr{
+    margin-top: 0px;
+    border: 2px dashed #f4d431;
+}
+.re_task{
+    height: 80px;
+}
+
+.re_task.task_container{
+    float: left;
+    width: 80%;
+    font-size: 20px;
+}
+.re_task_content{
+    font-size: 20px;
+    font-weight: 500px;
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding-left: 10px;
+    color: #2799cc;
+}
+.re_task_time{
+    font-size: 15px;
+    float: left;
+    width: 20%;
+    height: 40px;
+    text-align: left;
+    padding-left: 10px;
+}
+.re_task_where{
+    font-size: 15px;
+    float: left;
+    height: 40px;
+    width: 60%;
+    text-align: left;
+    padding-left: 10px;
+}
+.re_task_edit{
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    width: 10%;
+    color: #2799cc;
+}
+.re_task_delete{
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    float: left; 
+    width: 10%;
+    color: #2799cc;
+}
+.re_footer{
+    width: 100%;
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; 
+}
+.re_footer h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px 0px 0px ;
+    margin: 2px 0px 0px 0px; 
+}
+.re_footer h2 a{
+    text-decoration: none;
+    color: #2799cc;
+}
+/*
+* Today
+*/
+.col.today {
+    padding-top: 30px;
+    width: 40%;
+    height: 665px;
+    background-color: #f4d431;
+    padding-right: 10px;
+}
+.t_container{
+    width: 100%;
+    height: 630px;
+    background-color: white;
+    border-radius: 25px;
+}
+.t_header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+.t_title{
+    float: left;
+    width: 50%;
+    height: 70px;
+
+}
+.t_title h2{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500px;
+    padding: 2px 10px 0px 30px;
+    color: #2799cc;
+}
+.t_time{
+    float: left;
+    width: 50%;
+    height: 70px;
+}
+.t_time h2{
+    text-align: right;
+    font-size: 25px;
+    font-weight: 500px;
+    padding: 2px 30px 0px 10px;
+    color: #2799cc;
+}
+/*list*/
+.t_content{
+    width: 100%;
+    height: 465px;
+    background-color: white;
+    overflow:auto;
+}
+
+.task_line{
+    margin-top: 30px;
+    float: left;
+    width: 96.5%;
+    height: 100px;
+    margin-left: 10px;  
+}
+.task_line hr{
+    margin-top: 0px;
+    border: 2px dashed #f4d431;
+}
+.task{
+    height: 80px;
+}
+.task_confirm{
+    float: left;
+    width: 10%;
+}
+.task_confirm input{
+    display: block;
+    margin-top: 42px;
+    margin-left: 20px;
+    transform: scale(1.5);
+    color: #f4d431;
+}   
+.task_container{
+    float: left;
+    width: 70%;
+    font-size: 20px;
+}
+.task_content{
+    font-size: 20px;
+    font-weight: 500px;
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    padding-left: 10px;
+    color: #2799cc;
+}
+.task_time{
+    font-size: 15px;
+    float: left;
+    width: 20%;
+    height: 40px;
+    text-align: left;
+    padding-left: 10px;
+}
+.task_where{
+    font-size: 15px;
+    float: left;
+    height: 40px;
+    width: 60%;
+    text-align: left;
+    padding-left: 10px;
+}
+.task_edit{
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    width: 10%;
+    color: #2799cc;
+}
+.task_delete{
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    float: left; 
+    width: 10%;
+    color: #2799cc;
+}
+
+.t_footer{
+    width: 100%;
+    height: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.t_footer h2{
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0px 0px 0px ;
+    margin: 2px 0px 0px 0px;
+}
+.t_footer h2 a{
+    text-decoration: none;
+    color: #2799cc;
+}

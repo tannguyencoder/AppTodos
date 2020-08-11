@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Web to-do</title>
+</head>
+<body>
+    <div class="header">
+        <h2><i class="fa fa-star"></i> TO DO LIST <i class="fa fa-star"></i></h2>
+        <p>Everything Will Be Easy</p>
+    </div>
+    <div class="container">
+        <div class="col menu">
+            <div class="menu-header">
+                <h2>Duy Tân</h2>
+                <div class="search">
+                    <i class="fa fa-search"></i><input type="text" id="fname" name="fname"><br>
+                </div>
+            </div>
+            <div class="vertical-menu">
+                <a href="#" class="active"> <i class="fa fa-home"></i> Home</a>
+                <a href="#"><i class="fa fa-cog"></i> Setting</a>
+                <a href="#"><i class="fa fa-question-circle"></i> Help</a>
+                <a href="#"><i class="fa fa-sign-out"></i> Log out</a>
+              </div>
+        </div>
+        <div class="col every">
+            <div class="ev">
+                <div class="ev_header">
+                    <h2>EVERYDAY</h2>
+                </div>
+                <div class="ev_content">
+                    <div class="ev_task_line">
+                        <div class="ev_task task_confirm">
+                            <input type="checkbox">
+                        </div>
+                        <div class="ev_task task_content">
+                            <p>Sáu Múi Trong 2 tháng</p>
+                        </div>
+                        <div class="ev_task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="ev_task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <div class="ev_task_space">
+                            <hr>
+                        </div>
+                    </div>
+      
+                    <div class="ev_content">
+                        <div class="ev_task_line">
+                            <div class="ev_task task_confirm">
+                                <input type="checkbox" checked="checked">
+                            </div>
+                            <div class="ev_task task_content">
+                                <p>Hít Đất 100 cái</p>
+                            </div>
+                            <div class="ev_task task_edit">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <div class="ev_task task_delete">
+                                <i class="fa fa-trash"></i>
+                            </div>
+                            <div class="ev_task_space">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ev_content">
+                        <div class="ev_task_line">
+                            <div class="ev_task task_confirm">
+                                <input type="checkbox" checked="checked">
+                            </div>
+                            <div class="ev_task task_content">
+                                <p>Gập Bụng 100 lần</p>
+                            </div>
+                            <div class="ev_task task_edit">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <div class="ev_task task_delete">
+                                <i class="fa fa-trash"></i>
+                            </div>
+                            <div class="ev_task_space">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ev_footer">
+                    <h2><a href=""><i class="fa fa-plus-circle"></i></a></h2>
+                </div>
+            </div>
+            <div class="re">
+                <div class="re_header">
+                    <h2>REMEMBER ME</h2>
+                </div>
+                <div class="re_container">
+                    <div class="re_content">
+                        <div class="re_task_line">
+                            <div class="re_task task_container">
+                                <div class="re_task_content">
+                                    <p>Tìm hiểu ChirpStack</p>
+                                </div>
+                                <div class="re_task_time">
+                                    <p>8:00 AM</p>
+                                </div>
+                                <div class="re_task_where">
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="re_task re_task_edit">
+                                <i class="fa fa-edit"></i>
+                            </div>
+                            <div class="re_task re_task_delete">
+                                <i class="fa fa-trash"></i>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="re_footer">
+                        <h2><a href=""><i class="fa fa-plus-circle"></i></a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col today">
+            <div class="t_container">
+                <div class="t_header">
+                    <div class="t_title">
+                        <h2>TODAY</h2>
+                    </div>
+                    <div class="t_time">
+                        <h2>10/8/2020   <i class="fa fa-calendar"></i></h2>
+                    </div>
+                </div>
+                <div class="t_content">
+                    <div class="task_line">
+                        <div class="task task_confirm">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="task task_container">
+                            <div class="task_content">
+                                <p>Học Xử Lý Ảnh</p>
+                            </div>
+                            <div class="task_time">
+                                <p>9:00 AM</p>
+                            </div>
+                            <div class="task_where">
+                                <p>Phòng 211B1</p>
+                            </div>
+                        </div>
+                        <div class="task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="task_line">
+                        <div class="task task_confirm">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="task task_container">
+                            <div class="task_content">
+                                <p>Hoàn thành FrontEnd</p>
+                            </div>
+                            <div class="task_time">
+                                <p>True 8:00 AM</p>
+                            </div>
+                            <div class="task_where">
+                                <p>Thư Viện</p>
+                            </div>
+                        </div>
+                        <div class="task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="task_line">
+                        <div class="task task_confirm">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="task task_container">
+                            <div class="task_content">
+                                <p>Học Web cùng Anh Khoa</p>
+                            </div>
+                            <div class="task_time">
+                                <p>Monday 9:00 PM</p>
+                            </div>
+                            <div class="task_where">
+                                <p>Google Meet</p>
+                            </div>
+                        </div>
+                        <div class="task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="task_line">
+                        <div class="task task_confirm">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="task task_container">
+                            <div class="task_content">
+                                <p>Học Xử Lý Ảnh</p>
+                            </div>
+                            <div class="task_time">
+                                <p>9:00 AM</p>
+                            </div>
+                            <div class="task_where">
+                                <p>Phòng 211B1</p>
+                            </div>
+                        </div>
+                        <div class="task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="task_line">
+                        <div class="task task_confirm">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="task task_container">
+                            <div class="task_content">
+                                <p>Học Xử Lý Ảnh</p>
+                            </div>
+                            <div class="task_time">
+                                <p>9:00 AM</p>
+                            </div>
+                            <div class="task_where">
+                                <p>Phòng 211B1</p>
+                            </div>
+                        </div>
+                        <div class="task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="task_line">
+                        <div class="task task_confirm">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="task task_container">
+                            <div class="task_content">
+                                <p>Học Xử Lý Ảnh</p>
+                            </div>
+                            <div class="task_time">
+                                <p>9:00 AM</p>
+                            </div>
+                            <div class="task_where">
+                                <p>Phòng 211B1</p>
+                            </div>
+                        </div>
+                        <div class="task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="task_line">
+                        <div class="task task_confirm">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="task task_container">
+                            <div class="task_content">
+                                <p>Học Xử Lý Ảnh</p>
+                            </div>
+                            <div class="task_time">
+                                <p>9:00 AM</p>
+                            </div>
+                            <div class="task_where">
+                                <p>Phòng 211B1</p>
+                            </div>
+                        </div>
+                        <div class="task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <hr>
+                    </div>
+                    
+                    <div class="task_line">
+                        <div class="task task_confirm">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="task task_container">
+                            <div class="task_content">
+                                <p>Học Siêu Cao Tần</p>
+                            </div>
+                            <div class="task_time">
+                                <p>11:00 PM</p>
+                            </div>
+                            <div class="task_where">
+                                <p>Phòng 210B1</p>
+                            </div>
+                        </div>
+                        <div class="task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="task_line">
+                        <div class="task task_confirm">
+                            <input type="checkbox" checked="checked">
+                        </div>
+                        <div class="task task_container">
+                            <div class="task_content">
+                                <p>Học Xử Lý Ảnh</p>
+                            </div>
+                            <div class="task_time">
+                                <p>9:00 AM</p>
+                            </div>
+                            <div class="task_where">
+                                <p>Phòng 211B1</p>
+                            </div>
+                        </div>
+                        <div class="task task_edit">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <div class="task task_delete">
+                            <i class="fa fa-trash"></i>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+                <div class="t_footer">
+                    <h2><a href=""><i class="fa fa-plus-circle"></i></a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>
