@@ -145,40 +145,40 @@ body {
 }
 .ev_content{
     width: 100%;
-    height: 200px;
+    height: 220px;
     overflow: auto;
 }
 
 .ev_task_line{
-    margin-top: 20px;
+    margin-top: -5px;
     float: left;
     width: 96.5%;
-    height: 80px;
+    height: 60px;
     margin-left: 10px;  
 }
 
 .ev_task{
-    height: 50px;
+    height: 20px;
 }
 .ev_task.task_confirm{
     float: left;
-    width: 10%;
+    width: 7%;
 }
 .ev_task.task_confirm input{
-    margin-top: 33px;
+    margin-top: 25px;
     display: block;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: #f4d431;
 }   
 .ev_task.task_content{
     float: left;
-    width: 68%;
-    font-size: 25px;
+    width: 70%;
+    font-size: 20px;
     text-align: left;
 }
 .ev_task.task_edit{
     margin-top: -5px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     float: left;
     width: 10%;
@@ -186,18 +186,20 @@ body {
 }
 .ev_task.task_delete{
     margin-top: -5px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     float: left; 
     width: 10%;
     color: #2799cc;
 }
 .ev_task_space {
+    margin-top: 0;
     float: left;
     width: 100%;
 }
-.ev_task_space hr{
-    border: 2px dashed #f4d431;
+.ev_task_space{
+    background-color: #f4d431;
+    border: 0.5px solid #f4d431;
 }
 .ev_footer{
     width: 100%;
@@ -206,9 +208,9 @@ body {
     border-bottom-right-radius: 25px;
 }
 .ev_footer h2{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    padding: 15px 0px 0px 0px ;
+    padding: 10px 0px 0px 0px ;
     margin: 2px 0px 0px 0px;
 }
 .ev_footer h2 a{
@@ -256,18 +258,18 @@ body {
 }
 
 .re_task_line{
-    margin-top: 30px;
+    margin-top: 0;
     float: left;
     width: 96.5%;
     height: 100px;
     margin-left: 10px;  
 }
 .re_task_line hr{
-    margin-top: 0px;
-    border: 2px dashed #f4d431;
+    background-color: #f4d431;
+    border: 0.5px solid #f4d431;
 }
 .re_task{
-    height: 80px;
+    height: 70px;
 }
 
 .re_task.task_container{
@@ -276,7 +278,7 @@ body {
     font-size: 20px;
 }
 .re_task_content{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500px;
     float: left;
     width: 100%;
@@ -286,24 +288,22 @@ body {
     color: #2799cc;
 }
 .re_task_time{
-    font-size: 15px;
+    font-size: 13px;
     float: left;
-    width: 20%;
-    height: 40px;
+    width: 40%;
     text-align: left;
     padding-left: 10px;
 }
 .re_task_where{
-    font-size: 15px;
+    font-size: 13px;
     float: left;
-    height: 40px;
-    width: 60%;
+    width: 50%;
     text-align: left;
     padding-left: 10px;
 }
 .re_task_edit{
-    padding-top: 30px;
-    font-size: 30px;
+    margin-top: 30px;
+    font-size: 25px;
     text-align: center;
     float: left;
     width: 10%;
@@ -311,7 +311,7 @@ body {
 }
 .re_task_delete{
     padding-top: 30px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     float: left; 
     width: 10%;
@@ -391,18 +391,19 @@ body {
 }
 
 .task_line{
-    margin-top: 30px;
+    margin-top: 0px;
     float: left;
     width: 96.5%;
     height: 100px;
     margin-left: 10px;  
 }
 .task_line hr{
+    background-color: #f4d431;
     margin-top: 0px;
-    border: 2px dashed #f4d431;
+    border: 0.5px solid #f4d431;
 }
 .task{
-    height: 80px;
+    height: 60px;
 }
 .task_confirm{
     float: left;
@@ -410,9 +411,9 @@ body {
 }
 .task_confirm input{
     display: block;
-    margin-top: 42px;
+    margin-top: 40px;
     margin-left: 20px;
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: #f4d431;
 }   
 .task_container{
@@ -421,7 +422,7 @@ body {
     font-size: 20px;
 }
 .task_content{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500px;
     float: left;
     width: 100%;
@@ -431,24 +432,24 @@ body {
     color: #2799cc;
 }
 .task_time{
-    font-size: 15px;
+    font-size: 13px;
     float: left;
-    width: 20%;
+    width: 40%;
     height: 40px;
     text-align: left;
     padding-left: 10px;
 }
 .task_where{
-    font-size: 15px;
+    font-size: 13px;
     float: left;
     height: 40px;
-    width: 60%;
+    width: 50%;
     text-align: left;
     padding-left: 10px;
 }
 .task_edit{
     padding-top: 30px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     float: left;
     width: 10%;
@@ -456,7 +457,7 @@ body {
 }
 .task_delete{
     padding-top: 30px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     float: left; 
     width: 10%;
