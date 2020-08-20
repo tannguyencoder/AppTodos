@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Web to-do</title>
+</head>
+<body>
+    <div class="header">
+        <h2><i class="fa fa-star"></i> TO DO LIST <i class="fa fa-star"></i></h2>
+        <p>Everything Will Be Easy</p>
+    </div>
+    <div class="container">
+        <div class="col menu">
+            <div class="menu-header">
+                <h2>Duy Tân</h2>
+                <div class="search">
+                    <i class="fa fa-search"></i><input type="text"><br>
+                </div>
+            </div>
+            <div class="vertical-menu">
+                <a href="#" class="active"> <i class="fa fa-home"></i> Home</a>
+                <a href="#"><i class="fa fa-cog"></i> Setting</a>
+                <a href="#"><i class="fa fa-question-circle"></i> Help</a>
+                <a href="#"><i class="fa fa-sign-out"></i> Log out</a>
+              </div>
+        </div>
+        <div class="col every">
+            <div class="ev">
+                <div class="ev_header">
+                    <h2>EVERYDAY</h2>
+                </div>
+                <div class="ev_content">
+                    <li>
+                        <input type="checkbox" id="todo_1" />
+                        <label for="todo_1">
+                            <span class="check"></span>Học Tiếng Anh
+                        </label>
+                        <i class="fa fa-edit ev_edit"></i>
+                        <i class="fa fa-trash ev_delete"></i>
+                    </li>
+                </div>
+                <div class="ev_footer">
+                    <h2><button class="myEv"><i class="fa fa-plus-circle"></i></button></h2>
+                </div>
+            </div>
+            
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content" id="height-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-main" id="height-main">
+                        <div class="modal-name">
+                            <div class="m-title">
+                                <p>Nhiệm vụ :</p>
+                            </div>
+                            <div class="m-input"> 
+                                <input id="taskname" type="text" placeholder="Add Task">
+                            </div>
+                        </div>
+                        <div class="modal-time" id="time">
+                            <div class="m-title">
+                                <p>Thời gian :</p>
+                            </div>
+                            <div class="m-input">
+                                <input id="tasktime" type="text"placeholder="Add Time" >
+                            </div>
+                        </div>
+                        <div class="modal-potision" id="potision">
+                            <div class="m-title">
+                                <p>Địa điểm :</p>
+                            </div>
+                            <div class="m-input">
+                                <input id="taskwhere" type="text" placeholder="Add Where">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btnA">
+                            <button>Confirm</button>
+                        </div>
+                        <div class="btnB">
+                            <button class="exit">Canlce</button>
+                        </div>
+                    </div>
+                </div>
+              
+              </div>
+
+            <div class="re">
+                <div class="re_header">
+                    <h2>REMEMBER ME</h2>
+                </div>
+                <div class="re_container">
+                    <div class="re_content">
+                        <li>
+                            <input type="checkbox" id="r_todo_1" />
+                            <label for="r_todo_1">
+                                <div class="rd_name">
+                                    <span class="r_check"></span>Chirp Stack
+                                </div>
+                                <div class="rd_time">
+                                    <span class="r_checktime"></span>11:00 AM
+                                </div>
+                                <div class="rd_where">
+                                    <span class="r_checkwhere" ></span>204B3
+                                </div>
+                            </label>
+                            <i class="fa fa-edit r_edit"></i>
+                            <i class="fa fa-trash r_delete"></i>
+                        </li>
+                    </div>
+                    <div class="re_footer">
+                        <h2><button class="myRe"><i class="fa fa-plus-circle"></i></button></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col today">
+            <div class="t_container">
+                <div class="t_header">
+                    <div class="t_title">
+                        <h2>TODAY</h2>
+                    </div>
+                    <div class="t_time">
+                        <h2>10/8/2020   <i class="fa fa-calendar"></i></h2>
+                    </div>
+                </div>
+
+                <div class="t_content">
+                    <li>
+                        <input type="checkbox" id="t_todo_1" />
+                        <label for="t_todo_1">
+                            <div class="td_name">
+                                <span class="t_check"></span> Học Font-end Cùng Anh Khoa
+                            </div>
+                            <div class="td_time">
+                                <span class="t_check"></span>Monday 9:30 PM
+                            </div>
+                            <div class="td_where">
+                                <span class="t_check"></span>Any Where !!!
+                            </div>
+                        </label>
+                        <i class="fa fa-edit t_edit"></i>
+                        <i class="fa fa-trash t_delete"></i>
+                    </li>
+                </div>
+                <div class="t_footer">
+                    <h2><button class="myTo"><i class="fa fa-plus-circle"></i></button></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>    
+</body>
+<script src="jquery.min.js"></script>
+<script src="javascript.js"></script>
+</html>
