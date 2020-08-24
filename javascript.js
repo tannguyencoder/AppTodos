@@ -1,5 +1,6 @@
 // Get the modal
 var modal = document.getElementById("myModal");
+var confirms = document.getElementById("myConfirm");
 var time = document.getElementById("time");
 var potision = document.getElementById("potision");
 var hm = document.getElementById("height-main");
@@ -12,8 +13,8 @@ var btn2 = document.getElementsByClassName("myRe")[0];
 var btn3 = document.getElementsByClassName("myTo")[0];
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-var span1 = document.getElementsByClassName("exit")[0];
+var closes = document.getElementsByClassName("close")[0];
+var exit = document.getElementsByClassName("exit")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function () {
   modal.style.display = "block";
@@ -36,21 +37,27 @@ btn3.onclick = function () {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+closes.onclick = function () {
   modal.style.display = "none";
+  $("#taskname").val('');
+  $("#tasktime").val('');
+  $("#taskwhere").val('');
   id = 0;
 }
-span1.onclick = function () {
+exit.onclick = function () {
   modal.style.display = "none";
+  $("#taskname").val('');
+  $("#tasktime").val('');
+  $("#taskwhere").val('');  
   id = 0;
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// window.onclick = function (event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
 
 function myFunction() {
   var check = document.getElementById("CheckDone");
@@ -182,21 +189,27 @@ $(".btnA").click(function () {
     generateTemplate(todo);
     modal.style.display = "none";
     id = 0;
-    $("#taskname").val(' ');
+    $("#taskname").val('');
+    $("#tasktime").val('');
+    $("#taskwhere").val('');
   }
   if (todo.length && (id == 3)) {
     listLengthToday = listLengthToday + 1; // to update the checkbox id when we add a new list item
     generateToday(todo, time, where);
     modal.style.display = "none";
     id = 0;
-    $("#taskname").val(' ');
+    $("#taskname").val('');
+    $("#tasktime").val('');
+    $("#taskwhere").val('');
   }
   if (todo.length && (id == 2)) {
     listLengthRe = listLengthRe + 1; // to update the checkbox id when we add a new list item
     generateRe(todo, time, where);
     modal.style.display = "none";
     id = 0;
-    $("#taskname").val(' ');
+    $("#taskname").val('');
+    $("#tasktime").val('');
+    $("#taskwhere").val('');
   }
 });
 
@@ -223,3 +236,48 @@ function deleteTodosRe(e) {
 }
 
 todoListRe.addEventListener('click', deleteTodosRe);
+
+$(".signout").click(function (){
+ 
+  confirms.style.display="block";
+})
+$(".oke").click(function (){
+  confirms.style.display="none";
+  $(".col").hide();
+  $(".SignIn").show();
+  document.getElementsByClassName("container")[0].style.backgroundImage = "linear-gradient(135deg, #FF5572, #FF7555)";
+})
+$(".confirm-close").click(function(){
+  confirms.style.display="none";
+})
+$(".confirm-exit").click(function(){
+  confirms.style.display="none";
+})
+
+$(".SignIn").click(function(){
+  $(".sign-box").show();
+  $(".SignIn").hide();
+})
+
+$(".sign-close,.s-cancel").click(function(){
+  $(".sign-box").hide();
+  $(".SignIn").show();
+})
+$(".sign").click(function(){
+   const user = $("#username").val().trim();
+   const password = $("#password").val().trim();
+   if((user=="admin") &&(password=="admin")){
+    $(".col").show();
+    $(".SignIn").hide();
+    $(".sign-box").hide();
+    document.getElementsByClassName("container")[0].style.backgroundImage ="none";
+    $("#username").val('');
+    $("#password").val('');
+   }
+   else{
+      $(".sign-box").hide();
+      $(".SignIn").show();
+      $("#username").val('');
+      $("#password").val('');
+   }
+})

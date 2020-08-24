@@ -5,27 +5,19 @@
     }
 
     .header {
-        height: 90px;
-        width: 100%;
         background-color: #48272b;
     }
 
     .header h2 {
         font-size: 30px;
         font-weight: 200px;
-        text-align: center;
-        padding-top:5px;
-        margin-top: 0;
-        color: #f0e6c3;;
+        color: #f0e6c3;
+        ;
     }
 
     .header p {
-        padding-top: 0px;
-        margin-top: 0px;
         font-size: 20px;
-        text-align: center;
-        font-style: italic;
-        color: #f0e6c3;;
+        color: #f0e6c3;
     }
 
     /*
@@ -34,12 +26,11 @@
 
     .container {
         margin-top: 2px;
-        height: 700px;
-        width: 100%;
-        background-color: #f0e6c3;;
+        background-color: #f0e6c3;
     }
 
     .col {
+        display: none;
         float: left;
         margin-top: 5px;
     }
@@ -49,22 +40,12 @@
 */
 
     .col.menu {
-        width: 15%;
-        height: 695px;
-        background-color: #f0e6c3;;
+        background-color: #f0e6c3;
         padding-left: 20px;
     }
 
     .menu-header h2 {
-        text-align: center;
-        font-size: 35px;
-        font-weight: 100px;
         color: #48272b;
-    }
-
-    .search {
-        text-align: center;
-        padding-left: 10px;
     }
 
     .search i {
@@ -84,7 +65,7 @@
         outline: none;
         border-radius: 20px;
         border: 1px solid white;
-        margin-left:5px;
+        margin-left: 5px;
         padding-left: 15px;
         padding-top: 7px;
         padding-bottom: 7px;
@@ -92,12 +73,6 @@
 
     .search input:hover {
         border: 1px solid #48272b;
-    }
-
-    .vertical-menu {
-        margin-top: 20px;
-        text-align: center;
-        /* Set a width if you like */
     }
 
     .vertical-menu a {
@@ -118,56 +93,39 @@
         /* Dark grey background on mouse-over */
     }
 
-    .vertical-menu a.active {
+    /* .vertical-menu a.active {
         font-size: 23px;
         font-weight: 120;
         background-color: rgb(218, 214, 202);
         color: #8b565c;
-    }
+    } */
 
     /*
 * Everyday
 */
 
     .col.every {
-        padding-top: 30px;
-        width: 38%;
-        height: 665px;
-        background-color: #f0e6c3;;
-        padding-left: 20px;
-        padding-right: 20px;
+        background-color: #f0e6c3;
     }
 
     .ev {
-        float: left;
-        width: 100%;
-        height: 350px;
-        background-color: rgba(255, 255, 255, 0.5); 
+        background-color: rgba(255, 255, 255, 0.5);
         border-radius: 15px;
     }
 
     .ev_header {
-        margin-top: -21px;
-        width: 100%;
-        height: 70px;
         background-color: rgb(255 255 255 / 0%);
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
 
     .ev_header h2 {
-        font-size: 25px;
-        font-weight: 500px;
-        padding: 20px 10px 0px 30px;
-        color: #2799cc;
+        color: #48272b;
     }
 
-    .ev_content {
-        width: 90%;
-        height: 220px;
-        overflow: auto;
-        padding-left: 20px;
-    }
+    /*
+    * Format for elelement Everyday
+    */
 
     .ev_content li {
         user-select: none;
@@ -175,15 +133,18 @@
         display: flex;
         justify-content: space-between;
     }
-    .ev_content li input{
+
+    .ev_content li input {
         float: left;
         width: 5%;
     }
-    .ev_content li label{
+
+    .ev_content li label {
         padding-left: 10px;
         float: left;
         width: 90%;
     }
+
     .ev_content li i {
         float: right;
         width: 5%;
@@ -191,12 +152,15 @@
         cursor: pointer;
         padding: 5px 10px;
     }
-    .ev_content li i.ev_delete{
+
+    .ev_content li i.ev_delete {
         color: red;
     }
-    .ev_content li i.ev_edit{
+
+    .ev_content li i.ev_edit {
         color: #1495f1;
     }
+
     .ev_content input[type=checkbox] {
         display: none
     }
@@ -211,7 +175,7 @@
         padding: 5px 5px 5px 30px;
     }
 
-    .ev_content  input[type=checkbox]+label:hover {
+    .ev_content input[type=checkbox]+label:hover {
         color: #b69d10;
         font-size: 16px;
     }
@@ -235,7 +199,7 @@
         text-decoration: line-through;
     }
 
-    .ev_content  input[type=checkbox]:checked+label span.check {
+    .ev_content input[type=checkbox]:checked+label span.check {
         background-color: transparent;
         border-color: transparent;
         box-shadow: none;
@@ -279,6 +243,10 @@
         transition: opacity 300ms cubic-bezier(0.2, 0, 0, 1), transform 400ms cubic-bezier(0.3, 0, 0, 1.4);
     }
 
+    /*
+    * End format
+    */
+
     .ev_footer {
         width: 100%;
         height: 60px;
@@ -287,7 +255,6 @@
     }
 
     .ev_footer h2 {
-       
         font-size: 30px;
         text-align: center;
         padding: 10px 0px 0px 0px;
@@ -423,6 +390,7 @@
     }
 
     .btnA button {
+        cursor: pointer;
         outline: none;
         font-size: 15px;
         border-radius: 15px;
@@ -444,6 +412,7 @@
     }
 
     .btnB button {
+        cursor: pointer;
         outline: none;
         font-size: 15px;
         border-radius: 15px;
@@ -525,32 +494,38 @@
         display: flex;
         justify-content: space-between;
     }
-    .re_content li input{
+
+    .re_content li input {
         float: left;
         width: 5%;
     }
-    .re_content li label{
+
+    .re_content li label {
         padding-left: 10px;
         float: left;
         width: 80%;
     }
-    .re_content li label div.rd_name{
+
+    .re_content li label div.rd_name {
         width: 100%;
         float: left;
-        padding-left: 10px; 
+        padding-left: 10px;
     }
-    .re_content li label div.rd_time{
+
+    .re_content li label div.rd_time {
         width: 40%;
         float: left;
         padding-left: 10px;
         color: #000;
     }
-    .re_content li label div.rd_where{
+
+    .re_content li label div.rd_where {
         width: 40%;
         float: left;
         padding-left: 10px;
         color: #000;
     }
+
     .re_content li i {
         float: right;
         width: 5%;
@@ -558,14 +533,17 @@
         cursor: pointer;
         padding: 5px 10px;
     }
-    .re_content li i.r_delete{
+
+    .re_content li i.r_delete {
         padding-top: 15px;
         color: red;
     }
-    .re_content li i.r_edit{
+
+    .re_content li i.r_edit {
         color: #1495f1;
         padding-top: 15px;
     }
+
     .re_content input[type=checkbox] {
         display: none
     }
@@ -580,7 +558,7 @@
         padding: 5px 5px 5px 30px;
     }
 
-    .re_content  input[type=checkbox]+label:hover {
+    .re_content input[type=checkbox]+label:hover {
         color: #b69d10;
         font-size: 16px;
     }
@@ -599,25 +577,29 @@
         box-shadow: 0 2px 3px #F0F4F8;
     }
 
-    .re_content input[type=checkbox]:checked+label div.rd_name{
+    .re_content input[type=checkbox]:checked+label div.rd_name {
         color: #AEB7C6;
         text-decoration: line-through;
         padding-top: 6px;
     }
-    .re_content input[type=checkbox]:checked+label div.rd_time{
+
+    .re_content input[type=checkbox]:checked+label div.rd_time {
         color: #AEB7C6;
         display: none;
     }
-    .re_content input[type=checkbox]:checked+label div.rd_where{
+
+    .re_content input[type=checkbox]:checked+label div.rd_where {
         color: #AEB7C6;
         display: none;
     }
-    .re_content  input[type=checkbox]:checked+label span.r_check {
+
+    .re_content input[type=checkbox]:checked+label span.r_check {
         background-color: transparent;
         border-color: transparent;
         box-shadow: none;
     }
-    .re_content  input[type=checkbox]:checked+ i.r_delete {
+
+    .re_content input[type=checkbox]:checked+i.r_delete {
         padding-top: 0px;
     }
 
@@ -690,14 +672,15 @@
         padding-top: 30px;
         width: 40%;
         height: 665px;
-        background-color: #f0e6c3;;
+        background-color: #f0e6c3;
+        ;
         padding-right: 10px;
     }
 
     .t_container {
         width: 100%;
         height: 630px;
-        background-color: rgb(255,255,255,0.5);
+        background-color: rgb(255, 255, 255, 0.5);
         border-radius: 25px;
     }
 
@@ -746,38 +729,45 @@
         background-color: rgb(255 255 255 / 0%);
         overflow: auto;
     }
+
     .t_content li {
         user-select: none;
         margin-bottom: 10px;
         display: flex;
         justify-content: space-between;
     }
-    .t_content li input{
+
+    .t_content li input {
         float: left;
         width: 5%;
     }
-    .t_content li label{
+
+    .t_content li label {
         padding-left: 10px;
         float: left;
         width: 80%;
     }
-    .t_content li label div.td_name{
+
+    .t_content li label div.td_name {
         width: 100%;
         float: left;
-        padding-left: 10px; 
+        padding-left: 10px;
     }
-    .t_content li label div.td_time{
+
+    .t_content li label div.td_time {
         width: 40%;
         float: left;
         padding-left: 10px;
         color: #000;
     }
-    .t_content li label div.td_where{
+
+    .t_content li label div.td_where {
         width: 40%;
         float: left;
         padding-left: 10px;
         color: #000;
     }
+
     .t_content li i {
         float: right;
         width: 5%;
@@ -785,14 +775,17 @@
         cursor: pointer;
         padding: 5px 10px;
     }
-    .t_content li i.t_delete{
+
+    .t_content li i.t_delete {
         padding-top: 15px;
         color: red;
     }
-    .t_content li i.t_edit{
+
+    .t_content li i.t_edit {
         color: #1495f1;
         padding-top: 15px;
     }
+
     .t_content input[type=checkbox] {
         display: none
     }
@@ -807,7 +800,7 @@
         padding: 5px 5px 5px 30px;
     }
 
-    .t_content  input[type=checkbox]+label:hover {
+    .t_content input[type=checkbox]+label:hover {
         color: #b69d10;
         font-size: 16px;
     }
@@ -826,25 +819,29 @@
         box-shadow: 0 2px 3px #F0F4F8;
     }
 
-    .t_content input[type=checkbox]:checked+label div.td_name{
+    .t_content input[type=checkbox]:checked+label div.td_name {
         color: #AEB7C6;
         text-decoration: line-through;
         padding-top: 6px;
     }
-    .t_content input[type=checkbox]:checked+label div.td_time{
+
+    .t_content input[type=checkbox]:checked+label div.td_time {
         color: #AEB7C6;
         display: none;
     }
-    .t_content input[type=checkbox]:checked+label div.td_where{
+
+    .t_content input[type=checkbox]:checked+label div.td_where {
         color: #AEB7C6;
         display: none;
     }
-    .t_content  input[type=checkbox]:checked+label span.t_check {
+
+    .t_content input[type=checkbox]:checked+label span.t_check {
         background-color: transparent;
         border-color: transparent;
         box-shadow: none;
     }
-    .t_content  input[type=checkbox]:checked+ i.t_delete {
+
+    .t_content input[type=checkbox]:checked+i.t_delete {
         padding-top: 0px;
     }
 
@@ -885,7 +882,7 @@
         transform: scale(1.3);
         transition: opacity 300ms cubic-bezier(0.2, 0, 0, 1), transform 400ms cubic-bezier(0.3, 0, 0, 1.4);
     }
-  
+
     .t_footer {
         width: 100%;
         height: 60px;
@@ -907,4 +904,288 @@
         background-color: rgb(255 255 255 / 0%);
         text-decoration: none;
         color: #48272b;
+    }
+
+    .confirm {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 200px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .confirm-content {
+        background-color: rgba(255, 255, 255, 0.9);
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%;
+        height: 80px;
+        border-radius: 15px;
+    }
+
+    .confirm-header {
+        width: 100%;
+        height: 20px;
+    }
+
+    .confirm-header span {
+        cursor: pointer;
+        float: right;
+        color: #48272b;
+        font-size: 25px;
+        font-weight: 200%;
+    }
+
+    .confirm-header span:hover {
+        font-size: 25px;
+        float: right;
+        color: #ff0000;
+        font-weight: 200%;
+    }
+
+    .confirm-main {
+        width: 100%;
+        height: 20px;
+        text-align: center;
+    }
+
+    .confirm-main span {
+        font-size: 20px;
+        font-weight: 200%;
+        color: rgb(17, 182, 45);
+    }
+
+    .confirm-footer {
+        padding-top: 10px;
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        justify-items: center;
+    }
+
+    .signout-confirm {
+        float: left;
+        width: 50%;
+    }
+
+    .signout-confirm button {
+        cursor: pointer;
+        outline: none;
+        font-size: 15px;
+        border-radius: 15px;
+        color: #00ff00;
+        background-color: white;
+        border: 0.5px solid #00ff00;
+    }
+
+    .signout-confirm button:hover {
+        border: 1px solid #fff;
+        background-color: #00ff00;
+        color: white;
+    }
+
+    .signout-cancel {
+        float: left;
+        width: 50%;
+    }
+
+    .signout-cancel button {
+        cursor: pointer;
+        outline: none;
+        font-size: 15px;
+        border-radius: 15px;
+        color: #ff0000;
+        background-color: white;
+        border: 0.5px solid #ff0000;
+    }
+
+    .signout-cancel button:hover {
+        border: 1px solid #fff;
+        background-color: #ff0000;
+        color: white;
+    }
+
+    .SignIn {
+        padding-top: 100px;
+        text-align: center;
+        display: block;
+    }
+
+    .SignIn button {
+        border-radius: 15px;
+        outline: none;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        color: rgb(133, 23, 184);
+        background-color: white;
+        border: 0.5px solid rgb(133, 23, 184);
+    }
+
+    .SignIn button:hover {
+        color: white;
+        background-color: rgb(133, 23, 184);
+    }
+
+    .sign-box {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 200px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .sign-content {
+        background-color: rgba(255, 255, 255, 0.9);
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 20%;
+        height: 180px;
+        border-radius: 15px;
+    }
+
+    .sign-header {
+        width: 100%;
+        height: 30px;
+        color: red;
+    }
+
+    .sign-header span:hover {
+        color: #ff0000;
+        font-weight: 200%;
+    }
+
+    .sign-main {
+        padding-top: 10px;
+        width: 100%;
+        height: 70px;
+        text-align: center;
+    }
+
+    .sign-user {
+        float: left;
+        width: 100%;
+        height: 43px;
+    }
+
+    .s-password {
+        float: left;
+        width: 100%;
+        height: 43px;
+    }
+
+    .s-title {
+        float: left;
+        width: 30%;
+        height: 43px;
+        text-align: left;
+    }
+
+    .s-title p {
+        text-align: left;
+        color: #48272b;
+        font-size: 15px;
+    }
+
+    .s-input {
+        float: left;
+        width: 70%;
+        height: 43px;
+        padding-top: 5px;
+    }
+
+    .s-input input {
+        border-radius: 10px;
+        outline: none;
+        width: 90%;
+        color: #000;
+        font-size: 12px;
+        padding: 7px 7px 7px 7px;
+        border: 0.5px solid #000;
+    }
+
+    .s-input input:hover {
+        border: 0.5px solid #2799cc;
+    }
+
+    .sign-footer {
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        height: 30px;
+        justify-items: center;
+    }
+
+    .sign-footer .s-sign {
+        float: left;
+        width: 50%;
+        height: 30px;
+    }
+
+    .s-sign button {
+        cursor: pointer;
+        outline: none;
+        font-size: 15px;
+        border-radius: 15px;
+        color: #00ff00;
+        background-color: white;
+        border: 0.5px solid #00ff00;
+    }
+
+    .s-sign button:hover {
+        border: 1px solid #fff;
+        background-color: #00ff00;
+        color: white;
+    }
+
+    .modal-footer .s-cancel {
+        float: left;
+        width: 50%;
+        height: 30px;
+    }
+
+    .s-cancel button {
+        cursor: pointer;
+        outline: none;
+        font-size: 15px;
+        border-radius: 15px;
+        color: #ff0000;
+        background-color: white;
+        border: 0.5px solid #ff0000;
+    }
+
+    .s-cancel button:hover {
+        border: 1px solid #fff;
+        background-color: #ff0000;
+        color: white;
+    }
+
+    .sign-close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .sign-close:hover, .sign-close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
     }
